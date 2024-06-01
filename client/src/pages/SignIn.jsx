@@ -1,8 +1,12 @@
 import React from 'react';
 
-function SignIn(props) {
+function SignIn() {
     return (
-        <div></div>
+        <div>
+            <h2>
+                SIgnin
+            </h2>
+        </div>
     );
 }
 

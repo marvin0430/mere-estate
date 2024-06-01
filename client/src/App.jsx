@@ -10,11 +10,14 @@ function App() {
     return (
         <BrowserRouter>
             <Header />
-            <Routes path={'/'} element={<Home />} />
-            <Routes path={'/sign-in'} element={<SignIn />} />
-            <Routes path={'/sign-out'} element={<SignUp />} />
-            <Routes path={'/about'} element={<About />} />
-            <Routes path={'/profile'} element={<Profile />} />
+            <Routes>
+                <Route path={'/'} element={<Home />} />
+                <Route path={'/sign-in'} element={<SignIn />} />
+                <Route path={'/sign-up'} element={<SignUp />} />
+                <Route path={'/about'} element={<About />} />
+                <Route path={'/profile'} element={<Profile />} />
+            </Routes>
+
         </BrowserRouter>
     );
 }
